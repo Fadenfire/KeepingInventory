@@ -1,4 +1,4 @@
-# KeepingInventory
+# Keeping Inventory
 Source code for the Keeping Inventory mod.
 
 # Download
