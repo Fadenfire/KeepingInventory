@@ -3,9 +3,7 @@ package net.sparklepopprograms.keepinginventory;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.management.ServerConfigurationManager;
 import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.IChatComponent;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.IFMLSidedHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -21,8 +19,7 @@ public class CustomConnectionHandler {
 if (ConfigHandler.KeepInventory == true) {
 			
 			MinecraftServer.getServer().worldServerForDimension(0).getGameRules().setOrCreateGameRule("keepInventory", "true");
-			
-			FMLClientHandler.instance().getClient().ingameGUI.getChatGUI().printChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Your inventory will now be kept on death."));
+        
 		} else if (ConfigHandler.KeepInventory == false) {
 			
 			MinecraftServer.getServer().worldServerForDimension(0).getGameRules().setOrCreateGameRule("keepInventory", "false");
@@ -36,8 +33,6 @@ if (ConfigHandler.MobGriefing == true) {
 } else if (ConfigHandler.MobGriefing == false) {
 	
 	MinecraftServer.getServer().worldServerForDimension(0).getGameRules().setOrCreateGameRule("mobGriefing", "false");
-	
-	FMLClientHandler.instance().getClient().ingameGUI.getChatGUI().printChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Creepers will not destory blocks."));
 	
 }
     }
