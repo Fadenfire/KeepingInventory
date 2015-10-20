@@ -22,17 +22,19 @@ if (ConfigHandler.KeepInventory == true) {
 			
 			MinecraftServer.getServer().worldServerForDimension(0).getGameRules().setOrCreateGameRule("keepInventory", "true");
 			
-			FMLClientHandler.instance().getClient().ingameGUI.getChatGUI().printChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Your inventory will now be kept on death."));
+			FMLClientHandler.instance().getClient().ingameGUI.getChatGUI().printChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Your inventory will be kept on death."));
 		} else if (ConfigHandler.KeepInventory == false) {
 			
 			MinecraftServer.getServer().worldServerForDimension(0).getGameRules().setOrCreateGameRule("keepInventory", "false");
 			
+			FMLClientHandler.instance().getClient().ingameGUI.getChatGUI().printChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Your inventory will not be kept on death."));
 		}
 
 if (ConfigHandler.MobGriefing == true) {
 	
 	MinecraftServer.getServer().worldServerForDimension(0).getGameRules().setOrCreateGameRule("mobGriefing", "true");
 
+	FMLClientHandler.instance().getClient().ingameGUI.getChatGUI().printChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Creepers will destory blocks."));
 } else if (ConfigHandler.MobGriefing == false) {
 	
 	MinecraftServer.getServer().worldServerForDimension(0).getGameRules().setOrCreateGameRule("mobGriefing", "false");
