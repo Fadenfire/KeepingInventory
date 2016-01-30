@@ -22,7 +22,7 @@ group= "net.sparklepopprograms.keepinginventory"
 archivesBaseName = "KeepingInventory"
  
 minecraft {
-    version = "1.7.10-10.13.3.1388-1.7.10"
+    version = "1.7.10-10.13.4.1558-1.7.10"
 }
 processResources
 {
