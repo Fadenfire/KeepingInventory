@@ -17,7 +17,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.Mod.EventHandler;
 
-@Mod(modid = "KeepingInventory", name = "Keeping Inventory", version = "1.5")
+@Mod(modid = "KeepingInventory", name = "Keeping Inventory", version = "1.6")
 
 
 
@@ -28,6 +28,6 @@ public class KeepingInventoryMod {
 		
 		ConfigHandler.initProps();
 		
-		FMLCommonHandler.instance().bus().register(new CustomConnectionHandler());
+		FMLCommonHandler.instance().bus().register(new ConnectionHandler());
 	}
 }
