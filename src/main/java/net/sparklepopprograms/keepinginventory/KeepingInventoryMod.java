@@ -17,7 +17,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.Mod.EventHandler;
 
-@Mod(modid = "KeepingInventory", name = "Keeping Inventory", version = "1.6")
+@Mod(modid = "KeepingInventory", name = "Keeping Inventory", version = "1.7")
 
 
 

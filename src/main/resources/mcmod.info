@@ -3,7 +3,7 @@
   "modid": "KeepingInventory",
   "name": "Keeping Inventory",
   "description": "Keeping Inventory disables creeper explosions from destroying blocks, and you keep you inventory on death. Both of these features can be disabled or enabled in the config file.",
-  "version": "1.6",
+  "version": "1.7",
   "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
