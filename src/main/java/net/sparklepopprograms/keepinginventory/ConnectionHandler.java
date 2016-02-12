@@ -35,12 +35,12 @@ public class ConnectionHandler {
 		if (ConfigHandler.MobGriefing == true) {
 	
 			gameRules.setOrCreateGameRule("mobGriefing", "true");
-			event.player.addChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Creepers will destory blocks."));
+			event.player.addChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Creepers will destroy blocks."));
 
 		} else if (ConfigHandler.MobGriefing == false) {
 	
 			gameRules.setOrCreateGameRule("mobGriefing", "false");
-			event.player.addChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Creepers will not destory blocks."));
+			event.player.addChatMessage(new ChatComponentTranslation("[KeepingInventory] " + EnumChatFormatting.BLUE + "Creepers will not destroy blocks."));
 	
 		}
     }
