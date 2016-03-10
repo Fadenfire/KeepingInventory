@@ -1,6 +1,8 @@
 ## Keeping Inventory
 Source code for the Keeping Inventory mod.
 
+For the 1.7.10 source code go <a href="https://github.com/Silly511/Keeping-Inventory/tree/master-1.7.10">here</a>
+
 ## Download
 You can download the mod <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2453765-keeping-inventory-tired-of-losing-all-those">here</a>.
 
