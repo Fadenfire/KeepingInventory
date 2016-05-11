@@ -8,7 +8,7 @@ import net.minecraftforge.common.config.Property;
 public class ConfigHandler {
 	
 	public static boolean KeepInventory;
-	public static boolean MobGriefing;
+	public static boolean CreeperExplosions;
 	
 	public static void initProps() {
 		File mainFile = new File("config/Silly511/KeepingInventory.cfg");
@@ -18,7 +18,7 @@ public class ConfigHandler {
 		
 		
 		 KeepInventory = config.get(Configuration.CATEGORY_GENERAL, "KeepInventory", true).getBoolean(true);
-		 MobGriefing = config.get(Configuration.CATEGORY_GENERAL, "MobGriefing", false).getBoolean(false);;
+		 CreeperExplosions = config.get(Configuration.CATEGORY_GENERAL, "CreeperExplosions", false).getBoolean(false);
 		
 		if (config.hasChanged()) {
 			config.save();

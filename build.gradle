@@ -1,23 +1,19 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
         maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
     }
 }
+
+apply plugin: 'net.minecraftforge.gradle.forge'
  
-apply plugin: 'forge'
- 
-version = "1.8-1.9"
+version = "1.8.9-2.0"
 group= "net.sparklepopprograms.keepinginventory"
 archivesBaseName = "KeepingInventory"
 libsDirName = "../releases"
@@ -26,7 +22,8 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
  
 minecraft {
-    version = "1.8-11.14.3.1502"
+    version = "1.8.9-11.15.1.1722"
+    mappings = "stable_22"
 }
 
 task dev(type: Jar) {
