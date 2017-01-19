@@ -1,20 +1,17 @@
 buildscript {
     repositories {
         jcenter()
-        maven {
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
+        maven { url = "http://files.minecraftforge.net/maven" }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
     }
 }
 
 apply plugin: 'net.minecraftforge.gradle.forge'
  
-version = "1.8.9-2.0"
-group= "net.sparklepopprograms.keepinginventory"
+version = "1.11.2-2.2"
+group= "silly511.keepinginventory"
 archivesBaseName = "KeepingInventory"
 libsDirName = "../releases"
 
@@ -22,14 +19,9 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
  
 minecraft {
-    version = "1.8.9-11.15.1.1722"
-    mappings = "stable_22"
-}
-
-task dev(type: Jar) {
-    from sourceSets.main.output
-    from sourceSets.main.allJava
-    classifier = 'dev'
+    version = "1.11.2-13.20.0.2201"
+    mappings = "snapshot_20161227"
+    makeObfSourceJar = false
 }
 
 
