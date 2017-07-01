@@ -2,7 +2,7 @@
 Source code for the Keeping Inventory mod.
 
 ## Download
-You can download the mod <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2453765-keeping-inventory-tired-of-losing-all-those">here</a>.
+You can download the mod <a href="https://minecraft.curseforge.com/projects/keeping-inventory">here</a>.
 
 ## License
 This code is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License. You are free to use this code in any way as long as you follow the guidelines of this license. It can be found by clicking the image below:
