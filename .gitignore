@@ -1,8 +1,13 @@
 .DS_Store
+
 build
 bin
+/releases
+/run
+
 .settings
 .project
 .gradle
 .classpath
-releases
+.idea
+*.iml
