@@ -1,15 +1,9 @@
 [{
   "modid": "keepinginventory",
   "name": "Keeping Inventory",
-  "description": "Keeping Inventory disables creeper explosions from destroying blocks, and you keep you inventory on death. Both of these features can be disabled or enabled in the config file.",
-  "version": "2.2",
-  "mcversion": "1.11.2",
+  "description": "Keeping Inventory allows you to keep your inventory on death. You can also disable creeper explosions from destroying blocks or turn off fire spread in the config file.",
+  "version": "3.0",
+  "mcversion": "${mcversion}",
   "url": "",
-  "updateUrl": "",
-  "authorList": ["Silly511"],
-  "credits": "",
-  "logoFile": "",
-  "parent": "",
-  "screenshots": [],
-  "dependencies": []
+  "authorList": ["Fadenfire"]
 }]
